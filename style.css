@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #A0E9D2, #CFFDF2); /* Tosca gradasi ke putih cerah */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 128, 128, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.calculator h1 {
+  margin-bottom: 20px;
+  color: #006666;
+}
+
+#display {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #b2dfdb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #f0fdfc;
+  color: #004d40;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.keyboard button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #20c997; /* hijau tosca sedang */
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.keyboard button:hover {
+  background: #17a589;
+}
+
+.clear {
+  background: #e74c3c;
+}
+
+.clear:hover {
+  background: #c0392b;
+}
+
+.equal {
+  background: #1abc9c;
+  grid-column: span 1;
+}
+
+.equal:hover {
+  background: #16a085;
+}
+
+.discount-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.discount-buttons button {
+  flex: 1;
+  padding: 10px;
+  background: #00b894;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.discount-buttons button:hover {
+  background: #00997a;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #004d40;
+  white-space: pre-line;
+}
+
+.error {
+  margin-top: 10px;
+  color: #c0392b;
+  font-size: 14px;
+}

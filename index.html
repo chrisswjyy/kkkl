@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator KODE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <h1>Kalkulator kode</h1>
+
+    <input type="text" id="display" placeholder="Masukkan kode..." readonly />
+
+    <div class="keyboard">
+      <button onclick="appendCode('L')">L</button>
+      <button onclick="appendCode('U')">U</button>
+      <button onclick="appendCode('W')">W</button>
+      <button onclick="clearDisplay()" class="clear">C</button>
+
+      <button onclick="appendCode('A')">A</button>
+      <button onclick="appendCode('K')">K</button>
+      <button onclick="appendCode('T')">T</button>
+      <button onclick="backspace()">⌫</button>
+
+      <button onclick="appendCode('I')">I</button>
+      <button onclick="appendCode('G')">G</button>
+      <button onclick="appendCode('E')">E</button>
+      <button onclick="appendCode('R')">R</button>
+
+      <button onclick="appendCode('+')">+</button>
+      <button onclick="calculatePrice()" class="equal">= Hitung</button>
+    </div>
+
+    <div class="discount-buttons">
+      <button onclick="applyDiscount(10)">Diskon 10%</button>
+      <button onclick="applyDiscount(15)">Diskon 15%</button>
+      <button onclick="applyDiscount(20)">Diskon 20%</button>
+    </div>
+
+    <div class="result" id="result"></div>
+    <div class="error" id="error"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
